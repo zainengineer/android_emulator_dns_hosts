@@ -1,0 +1,7 @@
+version: '2'
+services:
+  nodejs:
+    image: mhart/alpine-node:7.7
+    command: ["sh", "/app/customrun.sh"]
+    volumes:
+        - .:/app
